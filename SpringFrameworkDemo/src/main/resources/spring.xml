@@ -5,6 +5,11 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-<bean id="doctor" class="demo.Doctor"></bean>
-<bean id="nurse" class="demo.Nurse"></bean>
+<bean id="doctor" class="demo.Doctor">
+    <property name="university" value="UOP"></property>
+    <property name="nurse" ref="nurse"></property>
+</bean>
+<bean id="nurse" class="demo.Nurse">
+    <constructor-arg name="university" value="UOP AHS"></constructor-arg>
+</bean>
 </beans>
