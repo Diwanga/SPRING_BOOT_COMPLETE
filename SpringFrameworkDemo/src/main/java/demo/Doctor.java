@@ -1,7 +1,9 @@
 package demo;
 
-import java.sql.SQLOutput;
+import org.springframework.stereotype.Component;
 
+import java.sql.SQLOutput;
+@Component
 public class Doctor implements Staff {
 
     private String university;
