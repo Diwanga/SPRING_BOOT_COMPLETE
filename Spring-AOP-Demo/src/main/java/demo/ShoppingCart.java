@@ -7,6 +7,9 @@ import org.springframework.stereotype.Component;
 public class ShoppingCart {
 
     public void checkout(){
+        //logging
+        //auth
+        //sanitize
         System.out.println("CHECKOUT method for cart");
     }
 }
