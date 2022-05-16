@@ -6,11 +6,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class ShoppingCart {
 
-    public void checkout(){
+    public void checkout(String text){
         //logging
         //auth
         //sanitize
         System.out.println("CHECKOUT method for cart");
+    }
+
+    public int calTotal(){
+        return 101;
     }
 }
 
